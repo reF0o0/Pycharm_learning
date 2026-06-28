@@ -25,6 +25,11 @@ if __name__ == '__main__':
 13.14
 #string
 "坚持"
+#boll
+True
+False
+#NoneType
+None
 print("-------------------------------------------------")
 
 #print输出
@@ -41,12 +46,12 @@ print("""落魄谷中寒风吹，春秋蝉鸣少年归。
 
 宿命天成命中败，仙尊悔而我不悔。""")
 num1=666
-print("胡一樊"+str(num1))
+print("胡一樊" + str(num1))
 print("胡一樊",num1)
 print("-------------------------------------------------")
 
 #注释
-#单行注释
+#单行注释 多选注释command+/
 """
 多
 行
@@ -56,7 +61,7 @@ print("-------------------------------------------------")
 print("-------------------------------------------------")
 
 #计算
-print(1+2-2*4/2**2+1**3)
+print(1 + 2 - 2*4 / 2**2 + 1**3)
 import math
 print(math.pi)
 print(math.e)
@@ -71,12 +76,12 @@ x = 3.7
 print(math.ceil(x))      # 向上取整
 print(math.floor(x))     # 向下取整
 print(round(x))          # 四舍五入
-a=-1
-b=-2
-c=3
-print((-b+math.sqrt(b**2-4*a*c))/(2*a))
-deta=math.pow(b,2)-4*a*c
-print((-b-math.pow(deta,1/2))/(2*a))
+a = -1
+b = -2
+c = 3
+print((-b + math.sqrt(b**2 - 4*a*c)) / (2*a))
+deta = math.pow(b,2) - 4*a*c
+print((-b - math.pow(deta,1/2)) / (2*a))
 print("-------------------------------------------------")
 
 #变量
@@ -98,6 +103,9 @@ print(type(888))
 print(type(13.14))
 print(type("坚持"))
 print(type(money))
+print(type(False))
+print(type(True))
+print(type(None))
 int_type = type(888)
 float_type = type(13.14)
 string_type = type("坚持")
@@ -135,3 +143,23 @@ print(len("Hi!"))
 print(len(" 6 "))
 print(len("坚\n持"))
 print(len("坚\"持"))
+print("-------------------------------------------------")
+
+#索引
+print("12345"[0])
+print("12345"[1])
+print("12345"[-1])
+#error print("12345"[5])
+print("-------------------------------------------------")
+
+#交互模式
+# 终端 无需print() 不保存
+print("-------------------------------------------------")
+
+#input
+# user_weight = input("请输入您的体重（KG）:")
+# user_height = input("请输入您的身高（M）:")
+# user_BMI = float(user_weight)/(float(user_height)**2)
+# print("您的BMI指数是：" + str(user_BMI))
+# print("-------------------------------------------------")
+
