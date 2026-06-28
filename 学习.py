@@ -129,3 +129,9 @@ int_float = float(2)
 print(type(int_float))
 print(int_float)
 print("-------------------------------------------------")
+
+#len
+len("Hi!!")
+len(" 6 ")
+len("坚\n持")
+len("坚\"持")
