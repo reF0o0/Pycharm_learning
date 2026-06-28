@@ -131,7 +131,7 @@ print(int_float)
 print("-------------------------------------------------")
 
 #len
-len("Hi!!")
-len(" 6 ")
-len("坚\n持")
-len("坚\"持")
+print(len("Hi!"))
+print(len(" 6 "))
+print(len("坚\n持"))
+print(len("坚\"持"))
