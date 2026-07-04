@@ -163,3 +163,43 @@ print("-------------------------------------------------")
 # print("您的BMI指数是：" + str(user_BMI))
 # print("-------------------------------------------------")
 
+#if
+# mark = float(input("您的成绩为："))
+# user_gender = input("您的性别是：")
+# user_mark = "您的成绩为："
+# if user_gender == "男":
+#     if mark < 60:
+#         print("先生，" + user_mark + "不及格")
+#     elif 60 <= mark < 80:
+#         print("先生，" + user_mark + "及格")
+#     else:
+#         print("先生，" + user_mark + "优秀")
+# else:
+#     if mark < 60:
+#         print("女士，" + user_mark + "不及格")
+#     elif 60 <= mark < 80:
+#         print("女士，" + user_mark + "及格")
+#     else:
+#         print("女士，" + user_mark + "优秀")
+# print("-------------------------------------------------")
+
+#list
+shoping_list = [ ]
+shoping_list.append("手机")
+shoping_list.append("平板")
+shoping_list.append("电脑")
+shoping_list.append("电视")
+print(shoping_list)
+shoping_list.remove("平板")
+print(shoping_list)
+shoping_list[2] = "耳机"
+print(shoping_list)
+print(shoping_list[0])
+price = [800,600,1000]
+sorted_price = sorted(price)
+max_price = max(price)
+min_price = min(price)
+print(max_price)
+print(min_price)
+print(sorted_price)
+print("-------------------------------------------------")
