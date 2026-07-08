@@ -65,8 +65,9 @@ print(1 + 2 - 2*4 / 2**2 + 1**3)
 import math
 print(math.pi)
 print(math.e)
-print(math.sin(30))
+print(math.sin(30))      #识别弧度
 print(math.sin(math.radians(30)))
+print(math.degrees(math.acos(0.5)))
 print(math.log2(4))
 print(2**10)
 print(math.pow(2,10))
@@ -112,9 +113,9 @@ string_type = type("坚持")
 print(int_type)
 print(float_type)
 print(string_type)
-name = "坚持"
-name_type = type(name)
-print(name_type)
+persist = "坚持"
+persist_type = type(persist)
+print(persist_type)
 print("-------------------------------------------------")
 
 #转换
@@ -153,7 +154,7 @@ print("12345"[-1])
 print("-------------------------------------------------")
 
 #交互模式
-# 终端 无需print() 不保存
+# 终端/控制台 无需print() 不保存
 print("-------------------------------------------------")
 
 #input
@@ -189,10 +190,19 @@ shoping_list.append("手机")
 shoping_list.append("平板")
 shoping_list.append("电脑")
 shoping_list.append("电视")
+shoping_list.append("游戏机")
+shoping_list.append("键盘")
 print(shoping_list)
 shoping_list.remove("平板")
 print(shoping_list)
+del shoping_list[3]
+print(shoping_list)
+key_board = shoping_list.pop(3)
+print(key_board)
+print(shoping_list)
 shoping_list[2] = "耳机"
+print(shoping_list)
+shoping_list.insert(2,"手表")
 print(shoping_list)
 print(shoping_list[0])
 price = [800,600,1000]
@@ -202,4 +212,39 @@ min_price = min(price)
 print(max_price)
 print(min_price)
 print(sorted_price)
+sorted_price.reverse()
+print(sorted_price)
+print(len(shoping_list))
 print("-------------------------------------------------")
+
+#for
+names = ["张三","李四","王五"]
+for name in names:
+    print(name + "同学")
+    print("------")
+print("以上")
+print("-------------------------------------------------")
+
+#range
+print(list(range(1,10,2)))
+xx = list(range(1,11))
+print(xx)
+print(max(xx))
+print(min(xx))
+print(sum(xx))
+num = [n*2 for n in range(1,6)]
+print(num)
+nums = [1,2,3]
+yy = [n*2 for n in nums]
+print(yy)
+
+#dictionary
+person = { }
+person["name"] = "Jack sparrow"
+person["age"] = 100
+person["gender"] = "male"
+print(person)
+del person["gender"]
+print(person)
+person["age"] = 10
+print(person)
