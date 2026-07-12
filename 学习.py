@@ -182,7 +182,13 @@ print("-------------------------------------------------")
 #         print("女士，" + user_mark + "及格")
 #     else:
 #         print("女士，" + user_mark + "优秀")
-# print("-------------------------------------------------")
+fru = ["西瓜","葡萄","草莓","橘子","苹果"]
+for item in fru:
+    if item in ["西瓜","橘子","苹果"]:
+        print("我爱吃" + item)
+    else:
+        print(item)
+print("-------------------------------------------------")
 
 #list
 shoping_list = [ ]
@@ -205,6 +211,14 @@ print(shoping_list)
 shoping_list.insert(2,"手表")
 print(shoping_list)
 print(shoping_list[0])
+print(shoping_list[0:2])         #切片
+print(shoping_list[:2])
+print(shoping_list[2:])
+for item in shoping_list[0:2]:
+    print(item)
+print(shoping_list[::2])
+print(shoping_list[1::2])
+print(shoping_list[:])
 price = [800,600,1000]
 sorted_price = sorted(price)
 max_price = max(price)
@@ -215,6 +229,13 @@ print(sorted_price)
 sorted_price.reverse()
 print(sorted_price)
 print(len(shoping_list))
+print("-------------------------------------------------")
+
+#元组 tuple
+t1 = ("春","夏","秋","冬")
+#error t1.append("四季")
+t = ("a","b","c","d","e","f","g")
+print(t[1:4])
 print("-------------------------------------------------")
 
 #for
@@ -237,6 +258,37 @@ print(num)
 nums = [1,2,3]
 yy = [n*2 for n in nums]
 print(yy)
+print("-------------------------------------------------")
+
+#布尔 boll
+print(7 < 5)
+print(7 > 5)
+print(7 == 5)
+print(7 != 5)
+apple = "苹果"
+print(apple == "苹果")
+print(apple != "苹果")
+print("a" > "b")     #比较码点
+print("A" > "a")
+print(True and False)
+print(True and True)
+print(False and False)
+print(True or False)
+print(False or False)
+print(not True)
+print(not not True)
+print(3 not in [3,4,5])
+print(0)
+"""
+以下会被认为False
+""     空字符串
+0      数值零
+None   空值
+()     空元组
+[]     空列表
+{}     空字典
+"""
+print("-------------------------------------------------")
 
 #dictionary
 person = { }
