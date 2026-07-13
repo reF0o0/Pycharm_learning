@@ -1,0 +1,339 @@
+# 这是一个示例 Python 脚本。
+from cmath import acos
+from unicodedata import name
+
+
+# 按 ⌃R 执行或将其替换为您的代码。
+# 按 双击 ⇧ 在所有地方搜索类、文件、工具窗口、操作和设置。
+
+
+def print_hi(name):
+    # 在下面的代码行中使用断点来调试脚本。
+    print(f'Hi, {name}')  # 按 ⌘F8 切换断点。
+
+
+# 按装订区域中的绿色按钮以运行脚本。
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+
+#字面量
+#int
+888
+#float
+13.14
+#string
+"坚持"
+#boll
+True
+False
+#NoneType
+None
+print("-------------------------------------------------")
+
+#print
+print(888)
+print(13.14)
+print("坚持")
+print("Stick to it, and you\'ll succeed")
+print("坚\n持")
+print("""落魄谷中寒风吹，春秋蝉鸣少年归。
+
+荡魂山处石人泪，定仙游走魔向北。
+
+逆流河上万仙退，爱情不敌坚持泪。
+
+宿命天成命中败，仙尊悔而我不悔。""")
+num1=666
+print("主人" + str(num1))
+print("主人",num1)
+master = "主人"
+print(f"你好，{master}")
+print("-------------------------------------------------")
+
+#注释
+#单行注释 多选注释command+/
+"""
+多
+行
+注
+释
+"""
+print("-------------------------------------------------")
+
+#计算
+print(1 + 2 - 2*4 / 2**2 + 1**3)
+import math
+print(math.pi)
+print(math.e)
+print(math.sin(30))      #识别弧度
+print(math.sin(math.radians(30)))
+print(math.degrees(math.acos(0.5)))
+print(math.log2(4))
+print(2**10)
+print(math.pow(2,10))
+print(math.pow(1024,1/10))
+print(math.sqrt(4))
+x = 3.7
+print(math.ceil(x))      # 向上取整
+print(math.floor(x))     # 向下取整
+print(round(x))          # 四舍五入
+a = -1
+b = -2
+c = 3
+print((-b + math.sqrt(b**2 - 4*a*c)) / (2*a))
+deta = math.pow(b,2) - 4*a*c
+print((-b - math.pow(deta,1/2)) / (2*a))
+print("-------------------------------------------------")
+
+#变量
+money = 50
+print("中午十二点钱包还有",money,"元")
+money = money - 10
+print("买了冰淇凌花费 10 元，还剩",money,"元")
+print("下午一点，钱包还剩",money,"元")
+print("买了巧克力花费 10 元")
+money = money - 10
+print("下午二点，钱包还剩",money,"元")
+print("买了可乐花费 5 元")
+money = money - 5
+print("下午三点，钱包还剩",money,"元")
+print("-------------------------------------------------")
+
+#数据类型
+print(type(888))
+print(type(13.14))
+print(type("坚持"))
+print(type(money))
+print(type(False))
+print(type(True))
+print(type(None))
+int_type = type(888)
+float_type = type(13.14)
+string_type = type("坚持")
+print(int_type)
+print(float_type)
+print(string_type)
+persist = "坚持"
+persist_type = type(persist)
+print(persist_type)
+print("-------------------------------------------------")
+
+#转换
+int_str = str(11)
+print(type(int_str))
+print(int_str)
+float_str = str(1.1)
+print(type(float_str))
+print(float_str)
+str_int = int("1")
+print(type(str_int))
+print(str_int)
+str_float = float("1.11")
+print(type(str_float))
+print(str_float)
+float_int = int(2.2)
+print(type(float_int))
+print(float_int)
+int_float = float(2)
+print(type(int_float))
+print(int_float)
+print("-------------------------------------------------")
+
+#len
+print(len("Hi!"))
+print(len(" 6 "))
+print(len("坚\n持"))
+print(len("坚\"持"))
+print("-------------------------------------------------")
+
+#索引
+print("12345"[0])
+print("12345"[1])
+print("12345"[-1])
+#error print("12345"[5])
+print("-------------------------------------------------")
+
+#交互模式
+# 终端/控制台 无需print() 不保存
+print("-------------------------------------------------")
+
+#input
+# user_weight = input("请输入您的体重（KG）:")
+# user_height = input("请输入您的身高（M）:")
+# user_BMI = float(user_weight)/(float(user_height)**2)
+# print("您的BMI指数是：" + str(user_BMI))
+# print("-------------------------------------------------")
+
+#if
+# mark = float(input("您的成绩为："))
+# user_gender = input("您的性别是：")
+# user_mark = "您的成绩为："
+# if user_gender == "男":
+#     if mark < 60:
+#         print("先生，" + user_mark + "不及格")
+#     elif 60 <= mark < 80:
+#         print("先生，" + user_mark + "及格")
+#     else:
+#         print("先生，" + user_mark + "优秀")
+# else:
+#     if mark < 60:
+#         print("女士，" + user_mark + "不及格")
+#     elif 60 <= mark < 80:
+#         print("女士，" + user_mark + "及格")
+#     else:
+#         print("女士，" + user_mark + "优秀")
+fru = ["西瓜","葡萄","草莓","橘子","苹果"]
+for item in fru:
+    if item in ["西瓜","橘子","苹果"]:
+        print("我爱吃" + item)
+    else:
+        print(item)
+print("-------------------------------------------------")
+
+#list
+shoping_list = [ ]
+shoping_list.append("手机")
+shoping_list.append("平板")
+shoping_list.append("电脑")
+shoping_list.append("电视")
+shoping_list.append("游戏机")
+shoping_list.append("键盘")
+print(shoping_list)
+shoping_list.remove("平板")
+print(shoping_list)
+del shoping_list[3]
+print(shoping_list)
+key_board = shoping_list.pop(3)
+print(key_board)
+print(shoping_list)
+shoping_list[2] = "耳机"
+print(shoping_list)
+shoping_list.insert(2,"手表")
+print(shoping_list)
+print(shoping_list[0])
+print(shoping_list[0:2])         #切片
+print(shoping_list[:2])
+print(shoping_list[2:])
+for item in shoping_list[0:2]:
+    print(item)
+print(shoping_list[::2])
+print(shoping_list[1::2])
+print(shoping_list[:])
+price = [800,600,1000]
+sorted_price = sorted(price)
+max_price = max(price)
+min_price = min(price)
+print(max_price)
+print(min_price)
+print(sorted_price)
+sorted_price.reverse()
+print(sorted_price)
+print(len(shoping_list))
+print("-------------------------------------------------")
+
+#元组 tuple
+t1 = ("春","夏","秋","冬")
+#error t1.append("四季")
+t = ("a","b","c","d","e","f","g")
+print(t[1:4])
+print("-------------------------------------------------")
+
+#for
+names = ["张三","李四","王五"]
+for name in names:
+    print(name + "同学")
+    print("------")
+print("以上")
+print("-------------------------------------------------")
+
+#range
+print(list(range(1,10,2)))
+xx = list(range(1,11))
+print(xx)
+print(max(xx))
+print(min(xx))
+print(sum(xx))
+num = [n*2 for n in range(1,6)]
+print(num)
+nums = [1,2,3]
+yy = [n*2 for n in nums]
+print(yy)
+print("-------------------------------------------------")
+
+#布尔 boll
+print(7 < 5)
+print(7 > 5)
+print(7 == 5)
+print(7 != 5)
+apple = "苹果"
+print(apple == "苹果")
+print(apple != "苹果")
+print("a" > "b")     #比较码点
+print("A" > "a")
+print(True and False)
+print(True and True)
+print(False and False)
+print(True or False)
+print(False or False)
+print(not True)
+print(not not True)
+print(3 not in [3,4,5])
+print(0)
+"""
+以下会被认为False
+""     空字符串
+0      数值零
+None   空值
+()     空元组
+[]     空列表
+{}     空字典
+"""
+print("-------------------------------------------------")
+
+#dictionary
+person = { }
+person["name"] = "Jack sparrow"
+person["age"] = 100
+person["gender"] = "male"
+print(person)
+del person["gender"]
+print(person)
+person["age"] = 10
+print(person)
+dict1 = {"bb":22,"aa":11,"cc":33,"dd":44}
+for key,value in dict1.items():
+    print(key,value)
+for key,value in sorted(dict1.items()):
+    print(key,value)
+for key in dict1.keys():
+    print(key)
+for key in sorted(dict1.keys()):
+    print(key,dict1[key])
+for value in dict1.values():
+    print(value)
+p1 = {"name":"张三","age":18,"gender":"男"}
+p2 = {"name":"李四","age":19,"gender":"女"}
+p3 = {"name":"王五","age":20,"gender":"男"}
+friends = [p1,p2,p3]
+print(friends)
+for f in friends:
+    print(f["name"],f["age"],f["gender"])
+person1 = {
+    "name":"小明",
+    "age":18,
+    "friends":["小红","小李","小王"],
+    "marks":{"语文":100,"数学":110,"英语":120}
+}
+for key,value in person1.items():
+    print(key,value)
+print("-------------------------------------------------")
+
+#集合
+dict2 = {"aa":10,"bb":20,"cc":20,"dd":10}
+nums = set(dict2.values())
+print(nums)
+set1 = {1,2,2,1}
+print(set1)
+print("-------------------------------------------------")
