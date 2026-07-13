@@ -32,7 +32,7 @@ False
 None
 print("-------------------------------------------------")
 
-#print输出
+#print
 print(888)
 print(13.14)
 print("坚持")
@@ -46,8 +46,10 @@ print("""落魄谷中寒风吹，春秋蝉鸣少年归。
 
 宿命天成命中败，仙尊悔而我不悔。""")
 num1=666
-print("胡一樊" + str(num1))
-print("胡一樊",num1)
+print("主人" + str(num1))
+print("主人",num1)
+master = "主人"
+print(f"你好，{master}")
 print("-------------------------------------------------")
 
 #注释
@@ -300,3 +302,38 @@ del person["gender"]
 print(person)
 person["age"] = 10
 print(person)
+dict1 = {"bb":22,"aa":11,"cc":33,"dd":44}
+for key,value in dict1.items():
+    print(key,value)
+for key,value in sorted(dict1.items()):
+    print(key,value)
+for key in dict1.keys():
+    print(key)
+for key in sorted(dict1.keys()):
+    print(key,dict1[key])
+for value in dict1.values():
+    print(value)
+p1 = {"name":"张三","age":18,"gender":"男"}
+p2 = {"name":"李四","age":19,"gender":"女"}
+p3 = {"name":"王五","age":20,"gender":"男"}
+friends = [p1,p2,p3]
+print(friends)
+for f in friends:
+    print(f["name"],f["age"],f["gender"])
+person1 = {
+    "name":"小明",
+    "age":18,
+    "friends":["小红","小李","小王"],
+    "marks":{"语文":100,"数学":110,"英语":120}
+}
+for key,value in person1.items():
+    print(key,value)
+print("-------------------------------------------------")
+
+#集合
+dict2 = {"aa":10,"bb":20,"cc":20,"dd":10}
+nums = set(dict2.values())
+print(nums)
+set1 = {1,2,2,1}
+print(set1)
+print("-------------------------------------------------")
