@@ -64,6 +64,7 @@ print("-------------------------------------------------")
 
 #计算
 print(1 + 2 - 2*4 / 2**2 + 1**3)
+print(7 % 3)               #求模运算符（余数）
 import math
 print(math.pi)
 print(math.e)
@@ -163,7 +164,11 @@ print("-------------------------------------------------")
 # user_weight = input("请输入您的体重（KG）:")
 # user_height = input("请输入您的身高（M）:")
 # user_BMI = float(user_weight)/(float(user_height)**2)
-# print("您的BMI指数是：" + str(user_BMI))
+# print(f"您的BMI指数是:{user_BMI}")
+# msg = "欢迎您的到来！"
+# msg += "\n请输入您喜欢的电影："
+# movie = input(msg)
+# print(movie)
 # print("-------------------------------------------------")
 
 #if
@@ -337,3 +342,51 @@ print(nums)
 set1 = {1,2,2,1}
 print(set1)
 print("-------------------------------------------------")
+
+# %求模运算
+# num = input("请输入数字：")
+# if float(num) % 3 == 0:
+#     print("您输入的数字是三的倍数")
+# else:
+#     print("您输入的数字不是三的倍数")
+# num = input("请输入数字：")
+# if float(num) % 2 == 0:
+#     print("您输入的数字是偶数")
+# else:
+#     print("您输入的数字是奇数")
+#print("-------------------------------------------------")
+
+#while循环
+n = 0
+while n < 5:
+    print(n)
+    n += 1
+print("循环结束")
+# msg = " "
+# while msg != "q":
+#     msg = input("请输入您的姓名：(输入q退出）")
+#     if msg != "q":
+#         print(f"您好，{msg}")
+# active = True
+# while active:
+#     msg = input("请输入您的姓名：(输入q退出）")
+#     if msg == "q":
+#         active = False
+#     else:
+#         print(f"您好，{msg}")
+n = 0
+while n < 5:
+    if n % 2 == 0:
+        n += 1
+        continue
+    else:
+        print(n)
+        n += 1
+n = 0
+while n < 5:
+    if n == 3:
+        break
+    else:
+        print(n)
+        n += 1
+
