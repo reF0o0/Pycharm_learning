@@ -45,7 +45,7 @@ print("""落魄谷中寒风吹，春秋蝉鸣少年归。
 逆流河上万仙退，爱情不敌坚持泪。
 
 宿命天成命中败，仙尊悔而我不悔。""")
-num1=666
+num1 = 666
 print("主人" + str(num1))
 print("主人",num1)
 master = "主人"
@@ -64,7 +64,7 @@ print("-------------------------------------------------")
 
 #计算
 print(1 + 2 - 2*4 / 2**2 + 1**3)
-print(7 % 3)               #求模运算符（余数）
+print(7 % 3)             #求模运算符（余数）
 import math
 print(math.pi)
 print(math.e)
@@ -389,4 +389,58 @@ while n < 5:
     else:
         print(n)
         n += 1
+list1 = ["aa","bb","cc"]
+list2 = [ ]
+while list1:
+    msg = list1.pop(0)
+    list2.append(msg.title())
+print(list2)
+pets = ["cat","dog","mouse","cat"]
+while "cat" in pets:
+    pets.remove("cat")
+print(pets)
+# user = { }
+# active = True
+# while active:
+#     name = input("请输入您的姓名：")
+#     age = input("请输入您的年龄：")
+#     user[name] = int(age)
+#     reply = input("保存成功，是否退出(y|n)")
+#     if reply == "y":
+#         active = False
+# print(user)
 
+#def
+def greet_user( ):
+    print("hello world")
+    print("I'm in greet_user")
+greet_user( )
+
+def say(name,score1,score2):
+    print(f"{name}同学")
+    print(f"你的总成绩为{score1 + score2}")
+say("张三",1,1)
+
+def say(name = "张三"):
+    print(f"你好{name}")
+say( )
+say("李四")
+
+def say(name,friends = [ ]):
+    friends.append(name)
+    print(friends)
+say("张三")
+say("李四")
+
+def say(name,friends = None):
+    if friends == None:
+        friends = [ ]
+    friends.append(name)
+    print(friends)
+say("张三")
+say("李四")
+
+def say(name,score1,score2):
+    print(f"{name}同学")
+    print(f"你的总成绩为{score1 + score2}")
+say(score2 = 1,score1 = 1,name = "张三")
