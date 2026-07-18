@@ -169,7 +169,7 @@ print("-------------------------------------------------")
 # msg += "\n请输入您喜欢的电影："
 # movie = input(msg)
 # print(movie)
-# print("-------------------------------------------------")
+print("-------------------------------------------------")
 
 #if
 # mark = float(input("您的成绩为："))
@@ -354,7 +354,7 @@ print("-------------------------------------------------")
 #     print("您输入的数字是偶数")
 # else:
 #     print("您输入的数字是奇数")
-#print("-------------------------------------------------")
+print("-------------------------------------------------")
 
 #while循环
 n = 0
@@ -409,6 +409,7 @@ print(pets)
 #     if reply == "y":
 #         active = False
 # print(user)
+print("-------------------------------------------------")
 
 #def
 def greet_user( ):
@@ -444,3 +445,92 @@ def say(name,score1,score2):
     print(f"{name}同学")
     print(f"你的总成绩为{score1 + score2}")
 say(score2 = 1,score1 = 1,name = "张三")
+
+x = 10
+def foo(y):
+    y += 1
+    print(y)
+foo(x)
+print(x)
+
+x = [10,20,30]
+def foo(y):
+    y[0] += 1
+    print(y)
+foo(x)
+print(x)
+
+x = [10,20,30]
+def foo(y):
+    y[0] += 1
+    print(y)
+foo(x[:])
+print(x)
+print(x[:])
+print("-------------------------------------------------")
+
+# * 元组
+def sum1(*args):
+    num = 0
+    for item in args:
+        num += item
+    print(f"所求合为：{num}")
+sum1(10,20)
+
+def sum1(*args):
+    num = sum(args)
+    print(f"所求合为：{num}")
+sum1(10,20)
+print("-------------------------------------------------")
+
+# ** 字典
+def foo(**args):
+    print(args)
+foo(name="张三",age=18,gender="男")
+
+def foo(**args):
+    for k,v in args.items():
+        print(f"键：{k}",f"值：{v}")
+foo(name="张三",age=18,gender="男")
+print("-------------------------------------------------")
+
+#函数返回值
+def foo(a,b):
+    return a + b
+res = foo(1,2)
+print(res)
+print("-------------------------------------------------")
+
+#变量作用域
+def foo( ):
+    n = 123             #局部变量
+foo( )
+print(n)
+
+n = 123                 #全局变量
+def foo( ):
+    print(n)
+foo( )
+print(n)
+
+n = 123                 #全局变量
+def foo( ):
+    n = 100             #新定义局部变量
+    print(n)
+foo( )
+print(n)
+
+n = 123                 #全局变量
+def foo( ):
+    global n            #引用全局变量
+    n = 100
+    print(n)
+foo( )
+print(n)
+
+n = 123                 #全局变量
+def foo(n):             #形参
+    n += 1
+    print(n)
+foo(n)
+print(n)
